@@ -2,10 +2,12 @@ const axios = require("axios");
 const cheerio = require("cheerio");
 const express = require("express");
 const app = express();
+const cors = require('cors');
 
 const targetUrl = "https://www.ndtv.com/latest"; // Replace with the URL you want to scrape
 
 app.set("view engine", "ejs");
+app.use(cors());
 
 var i = 8;
 
