@@ -41,7 +41,7 @@ app.get("/", async (req, res) => {
           content,
         });
       });
-      // console.log('Titles:', news);
+      console.log('Titles:', news);
     })
     .catch((error) => {
       console.error("Error fetching the page:", error);
